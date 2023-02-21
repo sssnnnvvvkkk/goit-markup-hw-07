@@ -31,7 +31,6 @@ img {
 }
 
 .container {
-  width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -101,7 +100,7 @@ img {
 }
 .section-title-hero {
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--light-color);
@@ -132,28 +131,20 @@ img {
 /* features */
 
 .icon-box-features {
-  width: 264px;
-  height: 112px;
-  background: #F4F4FD;
-  border-radius: 4px;
-  display: grid;
-  justify-items: center;
-  align-items: center;
+  display: none;
 }
 
 .features-icon {
-  width: 64px;
-  height: 64px;
-  display: flex;
-  justify-items: center;
+  display: none;
 }
 
 .item {
   flex-basis: calc((100% - 72px) /4);
 }
 
+
 .text-content{
-  display: flex;
+  display: block;
   gap: 24px;
 }
 
