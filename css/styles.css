@@ -36,8 +36,7 @@ img {
 }
 
 .sections {
-  padding-bottom: 120px;
-  padding-top: 120px; 
+  padding: 96px 16px;
 }
 
 
@@ -89,7 +88,7 @@ img {
 /* hero */
 .section-hero {
   background: var(--main-background);
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/dark-bg-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -98,6 +97,16 @@ img {
   display: flex;
   max-width: 100%;
 }
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/dark-bg-mob-2x.jpg);
+  }
+}
+
 .section-title-hero {
   font-size: 36px;
   line-height: 1.11;
@@ -139,13 +148,15 @@ img {
 }
 
 .item {
-  flex-basis: calc((100% - 72px) /4);
+  /* flex-basis: calc((100% - 72px) /4); */
+  width: 100%;
 }
 
 
 .text-content{
-  display: block;
-  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .title-features {
@@ -163,22 +174,25 @@ img {
   margin: -1px;
 }
 .subtitle-features {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--main-background);
   margin-bottom: 8px;
   margin-top: 8px;
+  text-align: center;
 }
 .text-features {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  max-width: 264px;
+  max-width: 396px;
 }
 /* doing */
+
 .doing {
   padding-bottom: 120px;
 }
@@ -202,7 +216,15 @@ img {
 
 .team {
   background: var(--4light-color);
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
+
+.container-team {
+  padding-left: 82px;
+  padding-right: 82px;
+}
+
 .team-title {
   font-size: 36px;
   line-height: 1.11;
@@ -212,6 +234,13 @@ img {
   color: var(--main-background);
   margin-bottom: 72px;
 }
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+}
+
 .team-item {
   background: var(--light-color);
   text-align: center;
@@ -240,10 +269,10 @@ img {
   padding-bottom: 32px;
 }
 
-.team-list {
+/* .team-list {
   display: flex;
   gap: 24px;
-}
+} */
 
 .team-soc-list {
   display: flex;
