@@ -246,6 +246,7 @@ img {
   text-align: center;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  align-content: center;
 }
 
 .team-subtitle {
@@ -318,13 +319,15 @@ img {
 
 .customers-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .customers-item {
-  flex-basis: calc((100% - 120px) / 6);
-  width: 168px;
+  /* flex-basis: calc((100% - 120px) / 6); */
+  width: 190px;
   height: 88px;
+  margin-bottom: 72px;
 }
 .customers-link {
   width: 100%;
@@ -350,6 +353,9 @@ img {
 
 /* footer */
 
+.footer {
+  padding: 96px 80px;
+}
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -359,6 +365,9 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--hover-focus-color);
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 .footer-logo-span {
   color: var(--4light-color);
@@ -370,9 +379,13 @@ img {
   color: var(--footer-color-text);
   margin-top: 16px;
   max-width: 264px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
 }
 .flex-footer {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .soc-text {
@@ -381,10 +394,13 @@ img {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #FFFFFF;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .gap-social {
-  margin-left: 120px;
+  margin: auto;
 }
 
 .gap-subscribe {

@@ -126,4 +126,26 @@
     }
 }
 
+    .container-team {
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+
+    .team-list {
+        gap: 24px;
+    }
+
+    .customers-section {
+        padding: 96px 107px 96px;
+    }
+
+    .customers-list {
+        gap: 24px;
+    }
+
+    .customers-item {
+        flex-basis: calc((100% - 48px) / 3);
+        width: 168px;
+    }
+
 }

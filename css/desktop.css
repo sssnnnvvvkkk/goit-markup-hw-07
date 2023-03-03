@@ -58,16 +58,18 @@
         justify-items: center;
     }
 
-    /* .section-hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    .team-list {
+        display: flex;
+        gap: 24px;
     }
 
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .section-hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
+    .customers-list {
+        display: flex;
+        gap: 24px;
     }
-} */
+
+    .customers-item {
+        flex-basis: calc((100% - 120px) / 6);
+        width: 190px;
+    }
 }
