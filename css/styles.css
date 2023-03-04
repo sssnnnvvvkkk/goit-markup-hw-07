@@ -388,6 +388,8 @@ img {
   flex-wrap: wrap;
 }
 
+
+
 .soc-text {
   font-weight: 500;
   font-size: 16px;
@@ -403,8 +405,13 @@ img {
   margin: auto;
 }
 
+.soc-footer-list {
+  margin-bottom: 72px;
+}
+
 .gap-subscribe {
-  margin-left: 80px;
+  margin: auto;
+  gap: 16px;
 }
 
 .soc-footer-list {
@@ -435,6 +442,9 @@ img {
 .footer-form {
   margin-top: 16px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 24px;
 }
 

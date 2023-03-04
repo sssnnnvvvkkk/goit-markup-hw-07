@@ -72,4 +72,17 @@
         flex-basis: calc((100% - 120px) / 6);
         width: 190px;
     }
+
+    
+
+    .gap-social {
+        margin-left: 120px;
+    }
+
+    .gap-subscribe {
+        margin-left: 80px;
+        margin: 0;
+    }
+
+    
 }

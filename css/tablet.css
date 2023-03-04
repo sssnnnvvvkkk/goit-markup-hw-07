@@ -148,4 +148,16 @@
         width: 168px;
     }
 
+    .footer-logo {
+        justify-content: left;
+    }
+
+    .soc-text {
+        justify-content: left;
+    }
+
+    .gap-subscribe  {
+        margin-left: 0;
+    }
+
 }
