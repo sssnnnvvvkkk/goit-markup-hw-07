@@ -49,13 +49,14 @@ img {
 }
 /* Header */
 
-
-
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
+.header-container {
+  display: flex;
+}
 
 .header-logo {  
   font-family: 'raleway', sans-serif;
@@ -65,7 +66,9 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--hover-focus-color);
-  margin-right: 76px;
+  /* display: flex;
+  align-items: center; */
+  margin-right: auto;
 }
 .span-logo {
   color: var(--main-background);
@@ -74,15 +77,112 @@ img {
   display: none;
   
 }
-.header-item {
-}
 
-
-.address {
-}
 .address-list {
   display: none;
 }
+
+.menu-open-btn {
+  display: block;
+  margin-left: auto;
+}
+
+.menu-close-btn {
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #E7E9FC;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFFFFF;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.mob-menu> .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-open-btn {
+}
+
+.mob-menu-list {
+  margin-bottom: 284px;
+}
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.mob-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2E2F42;
+}
+.current {
+}
+.mob-address-list {
+}
+.address-container {
+}
+.mob-address-item {
+  margin-bottom: 40px;
+}
+.mob-address-tel {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;  
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #4D5AE5;
+}
+
+.link-m {
+  text-decoration: none;
+}
+.mob-address-mail {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;  
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.contacts-header {
+}
+
+.mob-soc-list {
+  display: flex;
+  justify-content: left;
+  gap: 56px;
+  
+}
+
+.mob-soc-item {
+  width: 40px;
+  height: 40px;
+}
+
 
 
 /* hero */
