@@ -117,7 +117,20 @@ img {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.menu-mob-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  fill: black;
+  margin-left: auto;
+}
+
 .menu-open-btn {
+
 }
 
 .mob-menu-list {
